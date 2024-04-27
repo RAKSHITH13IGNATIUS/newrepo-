@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Senipy</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+  <script type="application/javascript">
+    window.onload = function () {
+      document.getElementById('year')
+        .innerHTML = (new Date()).getFullYear().toString()
+       
+    }
+  </script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+        
+          body {
+            font-family: "Open Sans", Helvetica, Arial, sans-serif;
+            margin: 0;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+          }
+          #seni-header {
+            background-color: #1b334b;
+            border-bottom: solid 2px #1b334b;
+            position: fixed;
+            width: 100%;
+            box-sizing: border-box;
+            top: 0;
+            z-index: 99999999;
+          }
+          #senipy-logo {
+            display: inline-block;
+            box-sizing: border-box;
+          }
+      
+          #senipy-logo img {
+            max-width: 100px;
+            margin-bottom: -10px;
+            margin-top: -5px;
+          }
+          
+    @media (min-width: 1200px) {
+        #seni-content {
+          margin-top: 75px;
+          width: 70%;
+          margin-left: auto;
+          margin-right: auto;
+        }
+      }
+  
+      @media (max-width: 800px) {
+        #senni-content {
+          margin-top: 75px;
+          width: 95%;
+          margin-left: auto;
+          margin-right: auto;
+        }
+      }
+      .grid-container {
+        display: grid;
+        
+        grid-template-columns: auto auto auto auto;
+        gap: 10px;
+        background-color: #347ca0;
+        padding: 10px;
+      }
+      
+      .grid-container > div {
+        background-color: rgba(240, 103, 103, 0.8);
+        text-align: center;
+        padding: 20px 0;
+        font-size: 30px;
+      }
+      #senipy-content .Message {
+        background-color: #02CAFE;
+        color: #23283D;
+        border-radius: 30px;
+        margin: 10px 0 30px 0;
+        padding-top: 25px;
+        padding-bottom: 25px;
+        padding-left: 40px;
+        padding-right: 40px;
+        box-sizing: border-box;
+      }
+        .grid-container {
+          display: grid;
+          grid-template-columns: auto auto auto auto;
+          gap: 75px;
+          background-color: #8ec3eb;
+          padding: 20px;
+        }
+        
+        .grid-container > div {
+          background-color: white;
+          border: 1px solid black;
+          text-align: center;
+          font-size: 40px;
+        }
+        .styled-button {
+          background-color: #144b73; 
+          border: none;
+          color: white;
+          padding: 15px 32px;
+          text-align: center;
+          text-decoration: none;
+          display: inline-block;
+          font-family:sans-serif ;
+          font-size: 16px;
+          margin: 4px 2px;
+          cursor: pointer;
+      }
+      
+        #seni-content>div {
+          padding: 40px 20px 20px 20px;
+          max-width: 1400px;
+          min-height: 728px;
+        }
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+        body{
+          line-height: 1.5;
+          font-family: 'Poppins', sans-serif;
+        }
+        *{
+          margin:0;
+          padding:0;
+          box-sizing: border-box;
+        }
+        .container{
+          max-width: 1170px;
+          margin:auto;
+        }
+        .row{
+          display: flex;
+          flex-wrap: wrap;
+        }
+        ul{
+          list-style: none;
+        }
+        .footer{
+          background-color: #24262b;
+            padding: 70px 0;
+        }
+        .footer-col{
+           width: 25%;
+           padding: 0 15px;
+        }
+        .footer-col h4{
+          font-size: 18px;
+          color: #ffffff;
+          text-transform: capitalize;
+          margin-bottom: 35px;
+          font-weight: 500;
+          position: relative;
+        }
+        .footer-col h4::before{
+          content: '';
+          position: absolute;
+          left:0;
+          bottom: -10px;
+          background-color: #e91e63;
+          height: 2px;
+          box-sizing: border-box;
+          width: 50px;
+        }
+        .footer-col ul li:not(:last-child){
+          margin-bottom: 10px;
+        }
+        .footer-col ul li a{
+          font-size: 16px;
+          text-transform: capitalize;
+          color: #ffffff;
+          text-decoration: none;
+          font-weight: 300;
+          color: #bbbbbb;
+          display: block;
+          transition: all 0.3s ease;
+        }
+        .footer-col ul li a:hover{
+          color: #ffffff;
+          padding-left: 8px;
+        }
+        .footer-col .social-links a{
+          display: inline-block;
+          height: 40px;
+          width: 40px;
+          background-color: rgba(255,255,255,0.2);
+          margin:0 10px 10px 0;
+          text-align: center;
+          line-height: 40px;
+          border-radius: 50%;
+          color: #ffffff;
+          transition: all 0.5s ease;
+        }
+        .footer-col .social-links a:hover{
+          color: #24262b;
+          background-color: #ffffff;
+        }
+        
+        /responsive/
+        @media(max-width: 767px){
+          .footer-col{
+            width: 50%;
+            margin-bottom: 30px;
+        }
+        }
+        @media(max-width: 574px){
+          .footer-col{
+            width: 100%;
+        }
+        }
+        </style>
+    </head>
+
+    <body>
+      <div>
+          <header id="seni-header">
+            <div>
+              <section id="senipy-logo" class="senipy-logo">
+                  <img size="42" src="C:\Users\Pavan\Documents\sen_logo.jpg" alt="senipy_logo">
+              </section>
+            </div>
+            </header>
+            <section id="seni-content">
+                <div style="min-height:500px;">
+                  <div class="Message" style="text-align: center;">
+                    <span style="font-size: 4.3vmin;line-height: 5.6vmin;"></span>
+                    <div style="padding-top: 30px;width:100%"><div class="spacer"></div></div>
+                    <div style="display: flex;justify-content: center;">
+                        <div class="Learn-More" style="justify-self: center;">
+                          <span style="color: white;font-size: 3.1vmin;text-align: center; line-height: 150%;"></span>
+                        </div>
+                    </div>
+                    <div class="grid-container">
+                    
+
+                            <button onclick="location.href='home.html';" class = "styled-button" id = "home">Home</button>
+                            <button onclick="location.href='device.html';"class="styled-button" id="logs">Devices</button>
+                            <button onclick="location.href='more.html';"class="styled-button" id="more">More</button>
+                            <button onclick="location.href='settings.html';" class="styled-button" id="settings">Settings</button>
+                            <button onclick="location.href='customer_services.html';"class="styled-button" id="customer services">Customer Services</button>
+                  
+                    </div>
+                    
+
+                    <div style="padding-top: 20px;width:100%"><div class="spacer"></div></div>
+                    <div style="text-align: center;font-size: 3.1vmin;">
+                      <span style="font-weight: 400;min-font-size: 43px;">Get started with the free Senipy.<br> Try saying, "</span>
+                      <span style="font-weight: 200;">Ultron, help me to begin.</span>
+                      <span style="font-weight: 400;">"</span>
+                    </div>
+                    <div style="padding-top: 30px;width:100%"><div class="spacer"></div></div>
+                  
+                      
+                        <footer class="footer">
+                           <div class="container">
+                             <div class="row">
+                               <div class="footer-col">
+                                 <h4>company</h4>
+                                 <ul>
+                                   <li><a href="#">about us</a></li>
+                                   <li><a href="#">our services</a></li>
+                                   <li><a href="#">privacy policy</a></li>
+                                   <li><a href="#">affiliate program</a></li>
+                                 </ul>
+                               </div>
+                               <div class="footer-col">
+                                 <h4>get help</h4>
+                                 <ul>
+                                   <li><a href="#">FAQ</a></li>
+                                   <li><a href="#">shipping</a></li>
+                                   <li><a href="#">returns</a></li>
+                                   <li><a href="#">order status</a></li>
+                                   <li><a href="#">payment options</a></li>
+                                 </ul>
+                               </div>
+                              
+                               <div class="footer-col">
+                                 <h4>follow us</h4>
+                                   <div class="social-links"> 
+                                  <a href="#"><i class="fab fa-facebook-f"></i></a> 
+                                  <a href="#"><i class="fab fa-twitter"></i></a>
+                                   <a href="#"><i class="fab fa-instagram"></i></a>
+                                    <a href="#"><i class="fab fa-linkedin-in"></i></a> 
+                                    <a href="https://linktr.ee/senipy08" target="_blank"><i class="fas fa-link"></i></a>
+                                   </div>
+                                 </div>
+                               </div>
+                             </div>
+                           </div>
+                        </footer>
+                      
+      </div>
+    </body>
+</html>
