@@ -1,0 +1,68 @@
+from selenium import webdriver
+from selenium.webdriver.common.keys import Keys
+import time
+import os
+from selenium.webdriver.common.by import By
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
+from selenium.webdriver.chrome.service import Service
+Service=Service(executable_path="chromedriver.exe")
+driver = webdriver.Chrome()
+driver.get("http://127.0.0.1:5500/newrepo--main/project/homescreen.html")
+os.system("cls")
+def wait_till_loaded(newxp):
+    try:
+        WebDriverWait(driver, 10).until(
+            EC.presence_of_element_located((By.XPATH,newxp))
+        )
+    except Exception as e:
+        print("Error:", e)
+wait_till_loaded('//*[@id="senipy-logo"]/img')
+button1 = driver.find_element(by=By.XPATH, value='//*[@id="senipy-logo"]/img')
+button1.click()
+time.sleep(2)
+wait_till_loaded('//*[@id="home"]')
+button1 = driver.find_element(by=By.XPATH, value='//*[@id="home"]')
+button1.click()
+driver.get("http://127.0.0.1:5500/newrepo--main/project/home.html")
+time.sleep(2)
+driver.get("http://127.0.0.1:5500/newrepo--main/project/homescreen.html")
+time.sleep(2)
+time.sleep(2)
+wait_till_loaded('//*[@id="logs"]')
+button1 = driver.find_element(by=By.XPATH, value='//*[@id="logs"]')
+button1.click()
+time.sleep(2)
+driver.get("http://127.0.0.1:5500/newrepo--main/project/device.html")
+time.sleep(2)
+driver.get("http://127.0.0.1:5500/newrepo--main/project/homescreen.html")
+time.sleep(2)
+wait_till_loaded('//*[@id="more"]')
+button1 = driver.find_element(by=By.XPATH, value='//*[@id="more"]')
+button1.click()
+time.sleep(2)
+driver.get("http://127.0.0.1:5500/newrepo--main/project/more.html")
+time.sleep(2)
+driver.get("http://127.0.0.1:5500/newrepo--main/project/homescreen.html")
+time.sleep(2)
+wait_till_loaded('//*[@id="settings"]')
+button1 = driver.find_element(by=By.XPATH, value='//*[@id="settings"]')
+button1.click()
+time.sleep(2)
+driver.get("http://127.0.0.1:5500/newrepo--main/project/settings.html")
+time.sleep(2)
+driver.get("http://127.0.0.1:5500/newrepo--main/project/homescreen.html")
+time.sleep(2)
+wait_till_loaded('//*[@id="customer services"]')
+button1 = driver.find_element(by=By.XPATH, value='//*[@id="customer services"]')
+button1.click()
+time.sleep(2)
+driver.get("http://127.0.0.1:5500/newrepo--main/project/customer_services.html")
+time.sleep(2)
+driver.get("http://127.0.0.1:5500/newrepo--main/project/homescreen.html")
+time.sleep(2)
+wait_till_loaded('//*[@id="seni-content"]/div/div/footer')
+button1 = driver.find_element(by=By.XPATH, value='//*[@id="seni-content"]/div/div/footer')
+button1.click()
+time.sleep(2)
+driver.quit()
