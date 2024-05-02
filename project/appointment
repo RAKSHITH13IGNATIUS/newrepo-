@@ -1,0 +1,28 @@
+const express = require('express');
+const bodyParser = require('body-parser');
+
+const app = express();
+app.use(bodyParser.json());
+
+// Example data for doctor appointments
+let appointments = [];
+
+// Endpoint for scheduling appointments
+app.post('/appointments', (req, res) => {
+  const appointment = req.body;
+  // Add the appointment to the list
+  appointments.push(appointment);
+  console.log('Appointment scheduled:', appointment);
+  res.json({ message: 'Appointment scheduled successfully', appointment });
+});
+
+// Endpoint for retrieving all appointments
+app.get('/appointments', (req, res) => {
+  res.json(appointments);
+});
+
+// Start the server
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, () => {
+  console.log(Server is running on port ${PORT});
+});
