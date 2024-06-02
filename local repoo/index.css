@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Best Online Food Delivery Service in India | MyOnlineMeals.com</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" media="screen and (max-width: 1170px)" href="phone.css">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2:wght@600&family=Bree+Serif&display=swap" rel="stylesheet">
+    <link rel="script" href="index.js">
+</head>
+
+<body>
+    <nav id="navbar">
+        <div id="logo">
+            <img src="logo.png" alt="MyOnlineMeals.com">
+        </div>
+        <ul>
+            <li class="item"><a href="#home">Home</a></li>
+            <li class="item"><a href="#services-container">Services</a></li>
+            <li class="item"><a href="#clients">Our Clients</a></li>
+            <li class="item"><a href="#contact-box">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <section id="home">
+        <h1 class="h-primary">Welcome to MyOnlineMeals</h1>
+        <P>We provide you the best meals with hundreds of variety and exotic flavours.</P>
+        <P>Our belive is in cleanliness and hygine which is maintaineed.</P>
+        <button class="btn">Order Now</button>
+    </section>
+
+    <section id="services-container">
+        <h1 class="h-primary center">Our Services</h1>
+        <div id="services">
+            <div class="box">
+                <img src="img/1.png" alt="">
+                <h2 class="h-secondary center">Food Catering</h2>
+                <p class="center">Our catering is the best in the worls with best caterers we provide you neat and hyginic catreing our catering staff is a trained and the best qualified staff we really say you that you will be wonder-struck by our service
+                </p>
+            </div>
+            <div class="box">
+                <img src="img/2.png" alt="">
+                <h2 class="h-secondary center">Bulk Ordering</h2>
+                <p class="center">We take huge orders of party and weddings with best service which you would love and we provide the food as per your requirement with a royal taste you could order even bulky food as per your need.There is no minimum or maximum order
+                </p>
+            </div>
+            <div class="box" id="cli">
+                <img src="img/3.png" alt="">
+                <h2 class="h-secondary center">Food Ordering</h2>
+                <p class="center">You could order your food by make with just a call or order online we do home fastest deliveries which could take 30 minutes to reach your home if proper address is given
+                </p>
+            </div>
+        </div>
+    </section>
+    <section id="client-section">
+        <h1 class="h-primary center">Our Clients</h1>
+        <div id="clients">
+            <div class="client-item">
+                <img src="img/logo1.png" alt="Our Clients">
+            </div>
+            <div class="client-item">
+                <img src="img/logo2.png" alt="Our Clients">
+            </div>
+            <div class="client-item">
+                <img src="img/logo3.png" alt="Our Clients">
+            </div>
+            <div class="client-item">
+                <img src="img/logo4.png" alt="Our Clients">
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <h1 class="h-primary center">Contact Us</h1>
+        <div id="contact-box">
+            <form action="">
+                <div class="form-group">
+                    <label for="name">Message:</label>
+                    <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="email">E-mail:</label>
+                    <input type="email" name="name" id="email" >
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number:</label>
+                    <input type="phone" name="name" id="phone" >
+                </div>
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" name="name" id="name" >
+                </div>
+                
+            </form>
+
+        </div>
+    </section>
+    <footer>
+        <div class="center">
+            copyright &copy; www.myonlinemeal.com. All rights reserved
+        </div>
+    </footer>
+</body>
+
+</html>
